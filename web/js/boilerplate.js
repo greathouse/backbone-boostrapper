@@ -2,8 +2,9 @@ define([
 	'jquery',
 	'mustache',
 	'backbone',
+	'foundation',
 	'text!templates/home/main'
-], function($, mustache, Backbone, template){	
+], function($, mustache, Backbone, foundation, template){	
 	var view = Backbone.View.extend({
 		el: $("#page"),
 		initialize: function(){
@@ -16,5 +17,5 @@ define([
 		
 	});
 	
-	return view;
+	return new view;
 });
